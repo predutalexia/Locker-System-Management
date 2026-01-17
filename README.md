@@ -1,5 +1,5 @@
 LOCK-IN Locker Management System
-A smart locker management system designed to help users book and manage lockers across multiple locations through both console-based and web interfaces.
+A locker management system used to help tourists book and manage lockers when inconvenient to carry luggage in different locations through a console-based and a web interface.
 Features
 •	Multiple Locations: Manage lockers at different locations such as Train station, Shopping Centers, Airports etc.
 •	Real-time Booking System: Book, track, and release lockers with unique access codes
@@ -52,12 +52,14 @@ Usage for users
 •	Release lockers when finished
 
 
+
 Usage for administrators
 •	Access the Admin Panel for system management
 •	View all locations, lockers, and bookings
 •	Monitor locker availability across all locations
 •	Manage user accounts and system configuration
 •	Generate reports on booking statistics
+
 Running Different Modes
 Demo Mode (with sample data):
 java -cp target/classes com.lockers.LockInApp demo
@@ -75,16 +77,20 @@ Models:
 •	Booking - Reservation with time tracking and access codes
 •	LockerSize - SMALL, MEDIUM, LARGE
 •	LockerStatus - AVAILABLE, OCCUPIED, MAINTENANCE
+
+
+
 Services:
 •	LocationService - Manage locations and lockers
 •	BookingService - Handle booking lifecycle
 •	ValidationService - Input and business rule validation
 •	DatabaseService - MySQL integration
+
 Network:
 •	LockerServer - TCP socket server (port 8080)
 •	LockerClient - Console-based client
 •	WebServer - HTTP server with REST API (port 8082)
-•	
+
 API Endpoints
 Authentication
 •	POST /api/login - User authentication
@@ -98,9 +104,7 @@ Bookings
 •	GET /api/bookings_username={user} - Get user's bookings
 •	GET /api/all-bookings - Get all bookings (admin only)
 •	POST /api/release-locker - Release an occupied locker
-Testing
-Run the unit tests: mvn test
-Available test classes:
+Test classes:
 •	BookingTest - Booking validation and lifecycle
 •	LockerTest - Locker operations
 •	LockerLocationTest - Location management
