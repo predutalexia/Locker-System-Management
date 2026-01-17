@@ -3,33 +3,21 @@ A smart locker management system designed to help users book and manage lockers 
 
 Features
 •	Multi-Location Support: Manage lockers at Train Stations, City Centers, Shopping Malls, and more
-
 •	Real-time Booking System: Book, track, and release lockers with secure access codes
-
 •	Multiple Locker Sizes: Small, Medium, and Large lockers with dynamic pricing
-
 •	User Authentication: Role-based access control (Admin/User)
-
 •	Dual Interface: Console client-server application and web-based dashboard
-
 •	Flexible Storage: Support for CSV files, object serialization, and MySQL database
 
 Tech Stack
-
 •	Backend: Java 17 with Socket Programming
-
 •	Frontend: HTML, CSS, JavaScript
-
 •	Database: MySQL 
-
 •	Build Tool: Apache Maven
-
 •	Data Storage: CSV, Object Streams, MySQL
-
 •	Network: TCP Socket Server (Port 8080), HTTP Web Server (Port 8082)
 
 Prerequisites
-
 
 •	Java Development Kit (JDK) 17 or higher
 •	Apache Maven 3.6 or higher
@@ -48,19 +36,20 @@ CREATE DATABASE db;
 \q
 cd database
 mysql -u root -p db < locker_system_database.sql
-3.	Configure application properties
+
+4.	Configure application properties
 Edit src/main/java/com/lockers/db/DB_Connection.java:
 private static final String URL = "jdbc:mysql://localhost:8082/db";
 private static final String USER = "your_username";
 private static final String PASSWORD = "your_password";
-4.	Build the project
+6.	Build the project
 mvn clean compile
-5.	Run the application
+7.	Run the application
 Option A: Demo Mode (Recommended for first run)
 java -cp target/classes com.lockers.LockInApp demo
 Option B: Web Interface
 java -cp target/classes com.lockers.web.WebServer
-6.	Access the application
+8.	Access the application
 •	Console Client: Follow terminal prompts after starting client mode
 •	Web Interface: Open browser to http://localhost:8082
 Default Credentials:
