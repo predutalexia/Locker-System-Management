@@ -1,20 +1,36 @@
 # Locker-System-Management
 A smart locker management system designed to help users book and manage lockers across multiple locations through both console-based and web interfaces.
+
 Features
 •	Multi-Location Support: Manage lockers at Train Stations, City Centers, Shopping Malls, and more
+
 •	Real-time Booking System: Book, track, and release lockers with secure access codes
+
 •	Multiple Locker Sizes: Small, Medium, and Large lockers with dynamic pricing
+
 •	User Authentication: Role-based access control (Admin/User)
+
 •	Dual Interface: Console client-server application and web-based dashboard
+
 •	Flexible Storage: Support for CSV files, object serialization, and MySQL database
+
 Tech Stack
+
 •	Backend: Java 17 with Socket Programming
+
 •	Frontend: HTML, CSS, JavaScript
-•	Database: MySQL (optional)
+
+•	Database: MySQL 
+
 •	Build Tool: Apache Maven
+
 •	Data Storage: CSV, Object Streams, MySQL
+
 •	Network: TCP Socket Server (Port 8080), HTTP Web Server (Port 8082)
+
 Prerequisites
+
+
 •	Java Development Kit (JDK) 17 or higher
 •	Apache Maven 3.6 or higher
 •	MySQL 8.0 or higher (optional, for database mode)
